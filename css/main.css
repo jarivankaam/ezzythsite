@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
@@ -87,6 +89,28 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    background-color: rgb(37, 71, 88);
+    padding: 20px 0;
+    color: white;
+    box-shadow: 0px 0px 21px -3px #000000;
+}
+
+.wrapper{
+    width: 70%;
+    margin: 0 auto;
+}
+h1{
+    margin: 0;
+}
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
