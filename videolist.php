@@ -26,21 +26,20 @@
     <?php include('header.php'); ?>
     <main>
         <div class="wrapper">
-            <div class="video-grid">
-                <div class="video-div" id="video-box">
-                    <a href="#">titel lalalalalal</a>
-                </div>
+            <div class="video-grid" id="video-box">
             </div>
         </div>
     </main>
-    
 
 
-  
 
+
+    <script src="js/jquery.js"></script>
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
+    <script src="js/videolist.js"></script>
     <script src="js/main.js"></script>
+
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>

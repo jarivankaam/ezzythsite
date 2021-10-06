@@ -90,31 +90,89 @@ textarea {
    ========================================================================== */
 
 *{
-    font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+  background-color: rgba(0,0,0,0.72);
+  color: white;
 }
 
 header{
-    background-color: rgb(37, 71, 88);
-    padding: 20px 0;
-    color: white;
-    box-shadow: 0px 0px 21px -3px #000000;
+  background-color: rgba(83, 152, 137, 0.91);
+  padding: 20px 0;
+  margin-bottom: 40px;
 }
 
 .wrapper{
-    width: 70%;
-    margin: 0 auto;
+  width: 70%;
+  margin: 0 auto;
 }
 h1{
-    margin: 0;
+  margin: 0;
 }
 .video-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.video-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+.video-div:hover{
+  background-color: rgba(79, 79, 79, 0.83);
+}
+.video-div a{
+  margin: 10px;
+  font-size: 1.2rem;
+}
+.content-box-top h3{
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 20px;
+}
+.content-box-top{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: rgba(83, 152, 137, 0.91);
+}
+.content-box-main{
+  padding: 0px 20px 20px 20px;
+  border: 3px solid rgba(83, 152, 137, 0.91);
+}
+.content-box-button{
+  padding: 10px 150px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.content-box-button:hover{
+  background-color: rgba(79, 79, 79, 0.83);
+}
+.button-container{
+  display: flex;
+  justify-content: center;
 }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 
+.shadow{
+  box-shadow: 0px 0px 21px -3px #000000;
+}
+.reset{
+  text-decoration: none;
+  color: white;
+}
+.clickable-background{
+  background-color: rgb(107, 107, 107);
+}
 /*
  * Hide visually and from screen readers
  */

@@ -24,11 +24,25 @@
 
 <body>
     <?php include('header.php'); ?>
-    
+    <main>
+      <div class="wrapper">
+        <div class="content-box">
+          <div class="content-box-top">
+            <h3>OfficialDuckStudios Video Lijst</h3>
+          </div>
+          <div class="content-box-main">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores atque aut, autem dolorem dolorum fugiat illum in ipsum magnam molestias nobis numquam officia perspiciatis reiciendis repudiandae sunt tempora vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet aspernatur consequuntur cumque dicta esse illum labore maiores mollitia nobis odio, quasi rem repellat reprehenderit sunt ullam ut veritatis voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, consequuntur ipsa modi provident repellendus temporibus. Dolorem, dolores ipsam minima molestias nemo non possimus provident unde. Ab neque nisi reprehenderit similique!</p>
+            <div class="button-container">
+              <button onclick="window.location.href='videolist.php'" class="content-box-button reset clickable-background">Ga naar pagina</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
 
-  
 
+    <script src="js/jquery.js"></script>
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
