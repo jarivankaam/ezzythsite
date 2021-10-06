@@ -23,7 +23,7 @@ const { stringify } = require('querystring');
                     }
                     window.scrollBy(0, 1920);
                 }, 500);
-                
+
             }
             catch(err){
                 console.log(err);
