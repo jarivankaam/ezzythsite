@@ -31,7 +31,15 @@ const { stringify } = require('querystring');
             }
         });
     });
-    const jsonData = JSON.stringify(data)
+    let dataArray = [];
+    data.forEach(element => {
+        const object = {
+            "title": element[0],
+            "link": element[1]
+        }
+        dataArray.push(object);
+    });
+    const jsonData = JSON.stringify(dataArray, null, '\t')
     fs.writeFileSync('duck.json', jsonData);
     await browser.close();
 
