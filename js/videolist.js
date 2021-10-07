@@ -1,6 +1,8 @@
+//unnecesary code doeznt use
+
 const videoBox = document.getElementById("video-box");
 const online = false;
-const url = "http://localhost:8080";
+const url = "";
 
 const Http = new XMLHttpRequest();
 Http.open("GET", url);

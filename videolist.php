@@ -2,51 +2,72 @@
 <html class="no-js" lang="">
 
 <head>
-    <meta charset="utf-8">
-    <title>ODS videos</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>ODS videos</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
 
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
-    <!-- Place favicon.ico in the root directory -->
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 
-    <meta name="theme-color" content="#fafafa">
+  <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-    <?php include('header.php'); ?>
-    <main>
-        <div class="wrapper">
-            <div class="video-grid" id="video-box">
-            </div>
-        </div>
-    </main>
+  <?php include('header.php'); ?>
+  <main>
+    <div class="wrapper">
+      <?php
+      set_error_handler("warning_handler", E_WARNING);
+      $items = file_get_contents("http://84.26.72.74:8080/");
+      function warning_handler($errno, $errstr){
+        echo("There was an error trying to connect to the server, reverted to the offline list.");
+      }
+      ?>
+      <div class="video-grid" id="video-box">
+        <?php
+          if($items !== false){
+            $items = json_decode($items, true);
+          }
+          else{
+            $items = json_decode(file_get_contents("js/duck.json"), true);
+          }
+          foreach($items as $item):
+          ?>
+          <div class="video-div clickable-background">
+            <a href="<?php echo($item['link']); ?>" class="reset"><?php echo($item['title']); ?></a>
+          </div>
+          <?php
+          endforeach;
+          ?>
+      </div>
+    </div>
+  </main>
 
 
 
 
-    <script src="js/jquery.js"></script>
-    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/videolist.js"></script>
-    <script src="js/main.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 
 
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
