@@ -42,9 +42,14 @@
             $items = json_decode(file_get_contents("js/duck.json"), true);
           }
           foreach($items as $item):
+            $linkseperated = explode("?v=", $item['link']);
           ?>
-          <div class="video-div clickable-background">
-            <a href="<?php echo($item['link']); ?>" class="reset"><?php echo($item['title']); ?></a>
+          <div onclick="window.location.href='<?php echo($item['link']); ?>'" class="video-div clickable-background">
+            <div class="title-container">
+              <a><?php echo($item['title']); ?></a>
+            </div>
+
+            <img src="<?php echo("https://img.youtube.com/vi/" . $linkseperated[1]) . "/mqdefault.jpg"; ?>" alt="thumbnail">
           </div>
           <?php
           endforeach;

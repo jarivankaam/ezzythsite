@@ -117,19 +117,31 @@ h1{
 }
 .video-div{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   margin: 20px 10px;
-  border-radius: 5px;
+  border-radius: 10px;
+  cursor: pointer;
   transition: all 0.2s ease;
 }
 .video-div:hover{
   background-color: rgba(79, 79, 79, 0.83);
 }
+.title-container{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
 .video-div a{
   margin: 10px;
   font-size: 1.2rem;
+}
+.video-div img{
+  vertical-align: bottom;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .content-box-top h3{
   font-size: 1.5rem;

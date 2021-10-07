@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7caa2ea-8644-4b30-b7e0-1afffb913170" name="Changes" comment="Website javascript and server side javascript updates">
+    <list default="true" id="f7caa2ea-8644-4b30-b7e0-1afffb913170" name="Changes" comment="Changed the requester from js to php because https certificate schmertificate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/duck.json" beforeDir="false" afterPath="$PROJECT_DIR$/js/duck.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/videolist.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/videolist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/videolist.php" beforeDir="false" afterPath="$PROJECT_DIR$/videolist.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +46,9 @@
       <workItem from="1633529888062" duration="11681000" />
       <workItem from="1633554900397" duration="690000" />
       <workItem from="1633613370299" duration="190000" />
-      <workItem from="1633613561106" duration="3351000" />
+      <workItem from="1633613561106" duration="3593000" />
+      <workItem from="1633619733871" duration="7173000" />
+      <workItem from="1633626930477" duration="1285000" />
     </task>
     <task id="LOCAL-00001" summary="Updated files?">
       <created>1633530391078</created>
@@ -77,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633551755758</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changed the requester from js to php because https certificate schmertificate">
+      <created>1633616951840</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1633616951841</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,7 +107,8 @@
     <MESSAGE value="Updated files?" />
     <MESSAGE value="Website Updates" />
     <MESSAGE value="Website javascript and server side javascript updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Website javascript and server side javascript updates" />
+    <MESSAGE value="Changed the requester from js to php because https certificate schmertificate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the requester from js to php because https certificate schmertificate" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
