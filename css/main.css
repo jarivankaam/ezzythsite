@@ -133,6 +133,7 @@ h1{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 0px 20px;
 }
+
 .video-div{
   display: flex;
   flex-direction: column;
@@ -177,7 +178,8 @@ h1{
   border: 3px solid rgba(83, 152, 137, 0.91);
 }
 .content-box-button{
-  padding: 10px 150px;
+  padding: 10px 0;
+  width: 40%;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -189,6 +191,25 @@ h1{
 .button-container{
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+  #searchbar{
+    width: 80%;
+  }
 }
 /* ==========================================================================
    Helper classes

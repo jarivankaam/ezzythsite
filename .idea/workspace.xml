@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7caa2ea-8644-4b30-b7e0-1afffb913170" name="Changes" comment="Added thumbnails&#10;&#10;Totally didn't spend three hours trying to scrape them from youtube and then realize you can literally generate the thumbnail url with the video id or something hahaha">
+    <list default="true" id="f7caa2ea-8644-4b30-b7e0-1afffb913170" name="Changes" comment="Added search bar and certificate for ssl">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videolist.php" beforeDir="false" afterPath="$PROJECT_DIR$/videolist.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +57,7 @@
       <workItem from="1633613561106" duration="3593000" />
       <workItem from="1633619733871" duration="7173000" />
       <workItem from="1633626930477" duration="1439000" />
-      <workItem from="1634106442656" duration="4195000" />
+      <workItem from="1634106442656" duration="5651000" />
     </task>
     <task id="LOCAL-00001" summary="Updated files?">
       <created>1633530391078</created>
@@ -103,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633628351813</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added search bar and certificate for ssl">
+      <created>1634111941234</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1634111941234</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +132,8 @@
     <MESSAGE value="Website javascript and server side javascript updates" />
     <MESSAGE value="Changed the requester from js to php because https certificate schmertificate" />
     <MESSAGE value="Added thumbnails&#10;&#10;Totally didn't spend three hours trying to scrape them from youtube and then realize you can literally generate the thumbnail url with the video id or something hahaha" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added thumbnails&#10;&#10;Totally didn't spend three hours trying to scrape them from youtube and then realize you can literally generate the thumbnail url with the video id or something hahaha" />
+    <MESSAGE value="Added search bar and certificate for ssl" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added search bar and certificate for ssl" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
