@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7caa2ea-8644-4b30-b7e0-1afffb913170" name="Changes" comment="Changed the requester from js to php because https certificate schmertificate">
+    <list default="true" id="f7caa2ea-8644-4b30-b7e0-1afffb913170" name="Changes" comment="Added thumbnails&#10;&#10;Totally didn't spend three hours trying to scrape them from youtube and then realize you can literally generate the thumbnail url with the video id or something hahaha">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/videolist.php" beforeDir="false" afterPath="$PROJECT_DIR$/videolist.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +18,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1z8VpYfjdfWDJnxAOJH670yesT7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -48,7 +58,8 @@
       <workItem from="1633613370299" duration="190000" />
       <workItem from="1633613561106" duration="3593000" />
       <workItem from="1633619733871" duration="7173000" />
-      <workItem from="1633626930477" duration="1285000" />
+      <workItem from="1633626930477" duration="1439000" />
+      <workItem from="1634106442656" duration="4195000" />
     </task>
     <task id="LOCAL-00001" summary="Updated files?">
       <created>1633530391078</created>
@@ -85,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633616951841</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added thumbnails&#10;&#10;Totally didn't spend three hours trying to scrape them from youtube and then realize you can literally generate the thumbnail url with the video id or something hahaha">
+      <created>1633628351813</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1633628351813</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,7 +126,8 @@
     <MESSAGE value="Website Updates" />
     <MESSAGE value="Website javascript and server side javascript updates" />
     <MESSAGE value="Changed the requester from js to php because https certificate schmertificate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the requester from js to php because https certificate schmertificate" />
+    <MESSAGE value="Added thumbnails&#10;&#10;Totally didn't spend three hours trying to scrape them from youtube and then realize you can literally generate the thumbnail url with the video id or something hahaha" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added thumbnails&#10;&#10;Totally didn't spend three hours trying to scrape them from youtube and then realize you can literally generate the thumbnail url with the video id or something hahaha" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

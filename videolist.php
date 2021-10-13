@@ -26,9 +26,13 @@
   <?php include('header.php'); ?>
   <main>
     <div class="wrapper">
+      <div class="searchbar-container">
+        <input type="text" id="searchbar" onkeyup="myFunction()" placeholder="Search for video">
+      </div>
+
       <?php
       set_error_handler("warning_handler", E_WARNING);
-      $items = file_get_contents("http://84.26.72.74:8080/");
+      $items = file_get_contents("https://epischekutzooi.xyz:8443/");
       function warning_handler($errno, $errstr){
         echo("There was an error trying to connect to the server, reverted to the offline list.");
       }
@@ -44,7 +48,7 @@
           foreach($items as $item):
             $linkseperated = explode("?v=", $item['link']);
           ?>
-          <div onclick="window.location.href='<?php echo($item['link']); ?>'" class="video-div clickable-background">
+          <div onclick="window.location.href='<?php echo($item['link']); ?>'" id="video-div" class="video-div clickable-background">
             <div class="title-container">
               <a><?php echo($item['title']); ?></a>
             </div>

@@ -1,21 +1,23 @@
 const puppeteer = require('puppeteer');
-const http = require('http');
+const https = require('https');
 const fs = require('fs');
 const { stringify } = require('querystring');
-getTitleJson();
 
-const requestListener = async function (req, res) {
+let options = {
+  key: fs.readFileSync('agent2-key.pem'),
+  cert: fs.readFileSync('agent2-cert.pem')
+};
+
+
+https.createServer(options, async function (req, res){
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.writeHead(200, {'Content-Type': 'application/json'});
   console.log("Connected!");
   res.end(fs.readFileSync('duck.json', 'utf8'));
-}
-
-const server = http.createServer(requestListener);
-server.listen(8080);
-
+}).listen(8443);
+getTitleJson().catch(e => { console.log(e) });
 async function getTitleJson(){
-  let browser = await puppeteer.launch({headless: true});
+  let browser = await puppeteer.launch({headless: true, args: ['--no-sandbox']});
   let page = await browser.newPage();
   await page.goto('https://www.youtube.com/c/OfficialDuckStudios/videos/');
   await page.click('button[aria-label="Agree to the use of cookies and other data for the purposes described"]');
