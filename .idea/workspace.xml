@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7caa2ea-8644-4b30-b7e0-1afffb913170" name="Changes" comment="Added search bar and certificate for ssl">
+    <list default="true" id="f7caa2ea-8644-4b30-b7e0-1afffb913170" name="Changes" comment="Added random search query and media queries for mobile peasants">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +56,7 @@
       <workItem from="1633613561106" duration="3593000" />
       <workItem from="1633619733871" duration="7173000" />
       <workItem from="1633626930477" duration="1439000" />
-      <workItem from="1634106442656" duration="5651000" />
+      <workItem from="1634106442656" duration="6095000" />
     </task>
     <task id="LOCAL-00001" summary="Updated files?">
       <created>1633530391078</created>
@@ -108,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634111941234</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added random search query and media queries for mobile peasants">
+      <created>1634113391715</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1634113391715</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,7 +139,8 @@
     <MESSAGE value="Changed the requester from js to php because https certificate schmertificate" />
     <MESSAGE value="Added thumbnails&#10;&#10;Totally didn't spend three hours trying to scrape them from youtube and then realize you can literally generate the thumbnail url with the video id or something hahaha" />
     <MESSAGE value="Added search bar and certificate for ssl" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added search bar and certificate for ssl" />
+    <MESSAGE value="Added random search query and media queries for mobile peasants" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added random search query and media queries for mobile peasants" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

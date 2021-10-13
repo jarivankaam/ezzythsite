@@ -7,7 +7,7 @@ function myFunction() {
   videoGrid = videoGrid[0];
   videoDiv = videoGrid.getElementsByClassName('video-div');
   if(filter == "%RANDOM%"){
-    randomIndex = Math.floor(Math.random() * (videoDiv.length + 1));
+    randomIndex = Math.floor(Math.random() * (videoDiv.length));
   }
 
   // Loop through all list items, and hide those who don't match the search query
