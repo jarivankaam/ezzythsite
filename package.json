@@ -20,6 +20,6 @@
   "description": "",
   "dependencies": {
     "fs": "0.0.1-security",
-    "puppeteer": "^13.1.2"
+    "puppeteer": "^21.3.7"
   }
 }
